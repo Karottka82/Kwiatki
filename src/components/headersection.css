@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("zdjecia/Montserrat-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Edwardian";
+  src: url("zdjecia/Edwardian\ Script\ ITC.ttf") format("truetype");
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #07240d;
+}
+
+header {
+  background-color: #07240d;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: "Edwardian", sans-serif;
+  font-size: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #07240d;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
