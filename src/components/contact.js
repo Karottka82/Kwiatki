@@ -9,8 +9,9 @@ const ContactSection = () => {
   return (
     <section id="kontakt">
       <img src={image7} alt="Kontakt" className="contact-image" />
-      <div id="kontakt-uklad">
+      <div className="kontakt-uklad">
         <ContactDataSection />
+
         <EmailForm />
       </div>
     </section>

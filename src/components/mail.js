@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./mail.css";
 const EmailForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -20,17 +20,18 @@ const EmailForm = () => {
   };
 
   return (
-    <div>
-      <h2>Zapytaj o wycenę</h2>
-      <div>
-        <label htmlFor="email">E-mail:</label>
+    <div className="mail">
+      <div className="mail-text">Zapytaj o wycenę</div>
+      <div className="mail-box">
+        <label>E-mail: </label>
         <input
           type="email"
-          id="email"
+          id="mail-data"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
+
       <div>
         <label htmlFor="message">Wiadomości:</label>
         <textarea
@@ -39,7 +40,9 @@ const EmailForm = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
       </div>
-      <button onClick={handleSubmit}>Wyślij</button>
+      <button className="custom-button" onClick={handleSubmit}>
+        Wyślij
+      </button>
     </div>
   );
 };
