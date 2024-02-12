@@ -1,5 +1,38 @@
-.main-image img {
-  height: auto;
-  margin-bottom: 0;
+.main-image {
+  position: relative;
+  height: 650px; /* Ustawienie odpowiedniej wysokości dla sekcji */
+  overflow: hidden; /* Zapobieganie wychodzeniu obrazów poza granice sekcji */
+}
+
+.image-container {
+  position: relative;
   width: 100%;
+  height: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Ustawienie domyślnej przezroczystości na 0 */
+}
+
+.first {
+  opacity: 1; /* Pierwsze zdjęcie jest widoczne na stałe */
+}
+
+.second {
+  animation: fadeInOut 5s infinite alternate; /* Drugie zdjęcie ma animację */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }

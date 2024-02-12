@@ -1,7 +1,7 @@
 import React from "react";
-import image4 from "./zdjecia/4.png";
-import image5 from "./zdjecia/5.png";
-import image6 from "./zdjecia/6.png";
+import image4 from "./zdjecia/5.png";
+import image5 from "./zdjecia/10.jpg";
+import image6 from "./zdjecia/4.png";
 import "./offersection.css";
 const OfferSection = () => {
   return (
