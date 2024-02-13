@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("zdjecia/Montserrat-Thin.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat-Thin.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Edwardian";
-  src: url("zdjecia/Edwardian Script ITC.ttf") format("truetype");
+  src: url("../assets/fonts/Edwardian Script ITC.ttf") format("truetype");
 }
 .custom-button {
   background-color: #07240d;

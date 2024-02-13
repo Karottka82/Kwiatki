@@ -2,7 +2,7 @@ import React from "react";
 import "./contactdata.css";
 const ContactDataSection = () => {
   return (
-    <div className="kontakt-data">
+    <div className="footer section">
       <div className="kontakt-text">
         <div>
           Telefon:

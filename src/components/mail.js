@@ -20,7 +20,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="mail">
+    <div className="mail section">
       <div className="mail-text">Zapytaj o wycenę</div>
       <div className="mail-box">
         <label>E-mail: </label>

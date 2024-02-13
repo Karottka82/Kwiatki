@@ -1,10 +1,10 @@
 import React from "react";
-import image4 from "./zdjecia/5.png";
+import image4 from "../assets/images/5.png";
 
 import "./offersection.css";
 const OfferSection = () => {
   return (
-    <section id="oferta" class="offer-section">
+    <section id="pricing" class="offer-section section">
       <div class="offer-item">
         <div class="offer-image">
           <img src={image4} alt="Zdjęcie 4" />

@@ -1,9 +1,9 @@
 import React from "react";
-import image6 from "./zdjecia/4.png";
+import image6 from "../assets/images/4.png";
 import "./servicesection.css";
 const ServiceSection = () => {
   return (
-    <div class="offer-item">
+    <div class="offer-item section">
       <div class="offer-image">
         <img src={image6} alt="Zdjęcie 6" />
       </div>
