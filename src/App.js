@@ -7,6 +7,8 @@ import AboutSection from "./components/about.js";
 import OfferSection from "./components/offersection.js";
 import ContactSection from "./components/contact.js";
 import LastSection from "./components/lastsection.js";
+import ServiceSection from "./components/servicesection.js";
+import ProjektSection from "./components/projektsection.js";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
       <MainPhotoSection />
       <AboutSection />
       <OfferSection />
+      <ProjektSection />
+      <ServiceSection />
       <ContactSection />
       <LastSection />
     </div>

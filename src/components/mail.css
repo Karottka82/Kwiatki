@@ -10,11 +10,12 @@
 .custom-button {
   background-color: #07240d;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
 }
 
 .custom-button:hover {
@@ -25,8 +26,9 @@
   font-family: "Montserrat", sans-serif;
   margin-left: 60px;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .mail-data label {
@@ -35,20 +37,22 @@
   margin-bottom: 30px;
   font-family: "Montserrat";
   font-size: 20px;
+  font-weight: 500;
 }
 #message {
   width: 100%;
   height: 100px;
-  padding: 40px;
+  margin-right: 10%;
   border-radius: 10px;
 }
 
 .mail {
   font-family: "Montserrat", sans-serif;
-  margin-left: 20px;
+  margin-left: 5%;
   margin-bottom: 40px;
   margin-top: 30px;
   width: 30%;
+  font-weight: 600;
 }
 
 .label {
@@ -60,12 +64,13 @@
 }
 
 .mail-box input[type="email"] {
-  width: 100%;
+  width: 90%;
   padding-block: 1px;
   padding-inline: 1px;
   margin-left: 20px;
   border-radius: 5px;
   height: 20px;
+  font-weight: 600;
 }
 .mail label[for="message"] {
   margin-top: 30px;

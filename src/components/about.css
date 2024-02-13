@@ -16,27 +16,31 @@ section {
 /* Styl dla sekcji "Witajcie w świecie zieleni!" */
 .about-section {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .about-text {
-  flex: 1;
-  margin-left: 10%;
-  margin-top: 4%;
-  margin-right: 10%;
+  width: 50%; /* Tekst zajmuje 60% szerokości */
+  padding: 0 20px; /* Dodaj wewnętrzne marginesy dla lepszego wyglądu */
   font-family: "Montserrat", sans-serif;
   text-align: justify;
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
 }
 
 .about-image {
-  flex: 1;
-  text-align: center;
-  margin-left: 20px;
+  width: 50%; /* Zdjęcie zajmuje 40% szerokości */
+  height: auto; /* Dopasuj wysokość do kontenera */
+  overflow: hidden; /* Ukryj ewentualne części obrazu, które wykraczają poza kontener */
+  position: relative;
 }
 
 .about-image img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Dostosuj szerokość obrazu do szerokości kontenera */
+  height: 100%; /* Dostosuj wysokość obrazu do kontenera */
+  object-fit: cover; /* Zachowaj proporcje obrazu i przyciąć go, aby dopasować do kontenera */
 }
 
 /* Styl dla nagłówka h2 */

@@ -1,0 +1,30 @@
+.offer-item {
+  display: flex;
+  align-items: stretch; /* Rozciągnij kontenery do takiej samej wysokości */
+  background-color: #07240d;
+}
+
+.offer-text {
+  width: 60%; /* Tekst zajmuje 60% szerokości */
+  padding: 0 20px; /* Dodaj wewnętrzne marginesy dla lepszego wyglądu */
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  color: #fff;
+}
+
+.offer-image {
+  width: 40%; /* Zdjęcie zajmuje 40% szerokości */
+  height: auto; /* Dopasuj wysokość do kontenera */
+  overflow: hidden; /* Ukryj ewentualne części obrazu, które wykraczają poza kontener */
+  position: relative; /* Ustaw pozycję względną, aby można było kontrolować pozycję obrazu */
+}
+
+.offer-image img {
+  width: 100%; /* Dostosuj szerokość obrazu do szerokości kontenera */
+  height: 100%; /* Dostosuj wysokość obrazu do kontenera */
+  object-fit: cover; /* Zachowaj proporcje obrazu i przyciąć go, aby dopasować do kontenera */
+}
