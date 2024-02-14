@@ -1,10 +1,10 @@
 import React from "react";
-import image5 from "./zdjecia/10.jpg";
+import image5 from "../assets/images/10.jpg";
 import "./projectsection.css";
 
 const ProjektSection = () => {
   return (
-    <div className="offer-item2">
+    <div className="offer-item2 section">
       <div className="offer-text2">
         <h2>Od pomysłu...</h2>
         <p>

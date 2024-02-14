@@ -1,10 +1,10 @@
 import React from "react";
-import image3 from "./zdjecia/3.png";
+import image3 from "../assets/images/3.png";
 import "./about.css";
 
 const AboutSection = () => {
   return (
-    <section id="o_nas" className="about-section">
+    <section id="about" className="about-section section">
       <div className="about-text">
         {" "}
         <h2>Witajcie w świecie zieleni!</h2>
