@@ -9,12 +9,14 @@ import LastSection from "./components/lastsection.js";
 import ServiceSection from "./components/servicesection.js";
 import ProjektSection from "./components/projektsection.js";
 import { Header } from "./components/Header";
+import { CarouselComponent } from "./components/CarouselComponent/CarouselComponent.jsx";
 
 export const App = () => {
   return (
     <>
       <Header />
-      <MainPhotoSection />
+      <CarouselComponent />
+      {/* <MainPhotoSection /> */}
       <AboutSection />
       <OfferSection />
       <ProjektSection />
