@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-Thin.ttf") format("truetype"); /* Poprawiona ścieżka do pliku */
+  src: url("../../assets/fonts/Montserrat-Thin.ttf") format("truetype"); /* Poprawiona ścieżka do pliku */
 }
 
 @font-face {
   font-family: "Edwardian";
-  src: url("../assets/fonts/Edwardian Script ITC.ttf") format("truetype"); /* Poprawiona ścieżka do pliku */
+  src: url("../../assets/fonts/Edwardian Script ITC.ttf") format("truetype"); /* Poprawiona ścieżka do pliku */
 }
 
 /* Styl dla sekcji */
