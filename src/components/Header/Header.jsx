@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import { Nav, Navbar } from "react-bootstrap";
 
 const sections = {
-  about1: "Royal Green",
+  home: "Royal Green",
   about: "O nas",
   pricing: "Usługi",
   contact: "Kontakt",
@@ -25,8 +25,8 @@ export const Header = () => {
 
   return (
     <Navbar sticky="top" style={{ backgroundColor: "#07240d" }}>
-      <Container>
-        <Nav className="me-auto">
+      <Container className="justify-end" style={{ width: "350px" }}>
+        <Nav className="me-auto ml-auto">
           {Object.values(sections).map((section, index) => (
             <Nav.Link
               style={{ color: "white" }}

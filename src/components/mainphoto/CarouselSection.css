@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-Thin.ttf") format("truetype"); /* Poprawiona ścieżka do pliku */
+}
+
+@font-face {
+  font-family: "Edwardian";
+  src: url("../../assets/fonts/Edwardian Script ITC.ttf") format("truetype"); /* Poprawiona ścieżka do pliku */
+}
+.carousel-caption-p,
+.carousel-caption-h5 {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 30px;
+}
+.carousel-caption-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.carousel-caption-h5 {
+  font-family: "Edwardian", sans-serif;
+  font-size: 50px;
+  font-weight: 1500;
+}

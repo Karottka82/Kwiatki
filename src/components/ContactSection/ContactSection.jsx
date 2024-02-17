@@ -1,6 +1,7 @@
 import { FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import "./ContactSection.css";
 
 export const ContactSection = () => {
   const form = useRef();
@@ -32,16 +33,14 @@ export const ContactSection = () => {
   };
 
   return (
-    <section className="mb-4">
-      <h2 className="h1-responsive font-weight-bold text-center my-4">
-        Napisz do nas
-      </h2>
+    <section className="mb-4" id="contact">
+      <h2 className="logo">Royal Green</h2>
       <p className="text-center w-responsive mx-auto mb-5"></p>
 
       <div className="row">
         <div className="col-md-9 mb-md-0 mb-5">
           <form ref={form} onSubmit={sendEmail}>
-            <div className="row">
+            <div className="row" style={{ margin: "10px" }}>
               <div className="col-md-6">
                 <div className="md-form mb-0">
                   <input
@@ -51,8 +50,8 @@ export const ContactSection = () => {
                     className="form-control"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    placeholder="Imię"
                   />
-                  <label htmlFor="name">Imię</label>
                 </div>
               </div>
               <div className="col-md-6">
@@ -64,12 +63,12 @@ export const ContactSection = () => {
                     className="form-control"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Twój email"
                   />
-                  <label htmlFor="email">Twój email</label>
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row" style={{ margin: "10px" }}>
               <div className="col-md-12">
                 <div className="md-form mb-0">
                   <input
@@ -79,12 +78,12 @@ export const ContactSection = () => {
                     className="form-control"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
+                    placeholder="Temat"
                   />
-                  <label htmlFor="subject">Temat</label>
                 </div>
               </div>
             </div>
-            <div className="row">
+            <div className="row" style={{ margin: "10px" }}>
               <div className="col-md-12">
                 <div className="md-form">
                   <textarea
@@ -94,13 +93,17 @@ export const ContactSection = () => {
                     className="form-control md-textarea"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Wiadomość"
                   ></textarea>
-                  <label htmlFor="message">Wiadomość</label>
                 </div>
               </div>
             </div>
             <div className="text-center text-md-left">
-              <button type="submit" className="btn btn-primary">
+              <button
+                type="submit"
+                className="btn btn-primary"
+                style={{ backgroundColor: "#07240d", padding: "10px 60px" }}
+              >
                 Wyślij
               </button>
             </div>
