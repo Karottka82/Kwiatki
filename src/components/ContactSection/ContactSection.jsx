@@ -10,17 +10,17 @@ export const ContactSection = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const PASSWORD_KEY = process.env.PASSWORD_KEY;
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm("service_xamdgq9", "template_o8h4iqe", form.current, {
-        publicKey: "jKUbAkhP5wr4KtFm6",
+        publicKey: { PASSWORD_KEY },
       })
       .then(
         () => {
           console.log("SUCCESS!");
-          // Reset form fields after successful submission
           setName("");
           setEmail("");
           setSubject("");
