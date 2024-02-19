@@ -4,12 +4,12 @@ import image4 from "../assets/images/5.png";
 import "./offersection.css";
 const OfferSection = () => {
   return (
-    <section id="pricing" class="offer-section section">
-      <div class="offer-item">
-        <div class="offer-image">
+    <section id="pricing" className="offer-section section">
+      <div className="offer-item">
+        <div className="offer-image">
           <img src={image4} alt="Zdjęcie 4" />
         </div>
-        <div class="offer-text">
+        <div className="offer-text" style={{ fontWeight: 600 }}>
           <h2>Oferta</h2>
           <p>
             Rośliny w przestrzeniach biurowych mają niezwykle pozytywny wpływ na

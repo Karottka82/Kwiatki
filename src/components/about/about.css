@@ -20,6 +20,7 @@ section {
 }
 
 .about-text {
+  font-weight: 600;
   width: 50%; /* Tekst zajmuje 60% szerokości */
   padding: 0 20px; /* Dodaj wewnętrzne marginesy dla lepszego wyglądu */
   font-family: "Montserrat", sans-serif;
