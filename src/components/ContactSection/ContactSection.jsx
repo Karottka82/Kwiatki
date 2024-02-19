@@ -10,13 +10,12 @@ export const ContactSection = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const PASSWORD_KEY = process.env.PASSWORD_KEY;
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm("service_xamdgq9", "template_o8h4iqe", form.current, {
-        publicKey: { PASSWORD_KEY },
+        publicKey: process.env.REACT_APP_PUBLIC_KEY,
       })
       .then(
         () => {
