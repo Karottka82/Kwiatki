@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css"; // Import your CSS file
 
-import MainPhotoSection from "./components/mainphoto.js";
-import AboutSection from "./components/about.js";
+import { CarouselSection } from "./components/mainphoto/CarouselSection.jsx";
+import AboutSection from "./components/about/about.js";
 import OfferSection from "./components/offersection.js";
-import ContactSection from "./components/contact.js";
+import { ContactSection } from "./components/ContactSection/ContactSection.jsx";
 import LastSection from "./components/lastsection.js";
 import ServiceSection from "./components/servicesection.js";
 import ProjektSection from "./components/projektsection.js";
@@ -14,7 +14,7 @@ export const App = () => {
   return (
     <>
       <Header />
-      <MainPhotoSection />
+      <CarouselSection />
       <AboutSection />
       <OfferSection />
       <ProjektSection />

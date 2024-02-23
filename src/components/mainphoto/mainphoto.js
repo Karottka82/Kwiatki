@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../assets/images/1a.jpg";
-import image2 from "../assets/images/office1.png";
+import image1 from "../../assets/images/1a.jpg";
+import image2 from "../../assets/images/office1.png";
 import "./mainphoto.css";
 
 const MainPhotoSection = () => {
